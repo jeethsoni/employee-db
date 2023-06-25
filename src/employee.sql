@@ -56,21 +56,23 @@ CREATE TABLE IF NOT EXISTS business_department(
 
 );
 
-
-
-
-
-
-
-
-
-
-
-
 CREATE TABLE IF NOT EXISTS employee(
     EEID INT NOT NULL,
     first_name varchar(50) NOT NULL,
     last_name varchar(50) NOT NULL,
-    job_id
+    job_id INT NOT NULL,
+    gender varchar(25) NOT NULL,
+    ethnicity_id INT NOT NULL,
+    age INT NOT NULL,
+    hire_date DATE NOT NULL,
+    salary INT NOT NULL,
+    bonus decimal NOT NULL,
+    place_id INT NOT NULL,
+    exit_date date,
+    primary key(EEID),
+    foreign key (job_id) REFERENCES job(job_id),
+    foreign key (ethnicity_id) REFERENCES ethnicity(ethnicity_id),
+    foreign key (place_id) REFERENCES place(place_id),
+    created_at timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL
 
 );
