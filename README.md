@@ -16,7 +16,7 @@ Man, what can I say, I am really enjoying normalizing the tables and as it comes
 
 ### **ER Diagram**
 
-!["Employee-ERD"](employee-ERD.PNG)
+!["Employee-ERD"](employee-ERD.png)
 
 ### **Conclusion**
 
